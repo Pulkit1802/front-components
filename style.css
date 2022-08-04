@@ -7,9 +7,13 @@
 html, body {
     height: 100%;
     font-size: 18px;
-    color: #555;
+    color: #395B64;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+}
+
+header {
+    position: relative;
 }
 
 ul {list-style: none;}
@@ -24,6 +28,32 @@ h2 {
     margin-bottom: 5%;
 }
 
+.btn-side-nav {
+    position: absolute;
+    top: 1.5%;
+    right: 10%;
+    font-size: 140%;
+    cursor: pointer;
+    visibility: hidden;
+    color: #0F3D3E;
+    z-index: 2;
+    transition: transform 0.4s, color 0.4s;
+}
+
+.btn-side-nav:hover {
+    color: #395B64;
+    transform: rotate(90deg);
+}
+
+.overlay {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
 .top-nav {
     display: flex;
     justify-content: space-around;
@@ -31,6 +61,42 @@ h2 {
     padding: 1% 8%;
     box-shadow: 0 2px 4px #555;
     align-items: center;
+}
+
+.side-nav {
+    display: flex;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 10;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    padding: 2% 0;
+    box-shadow: 2px 2px 6px #555;
+    height: 100%;
+    transition: width 0.2s;
+}
+
+.side-nav > .logo {
+    margin-bottom: 20%;
+    white-space: nowrap;
+}
+
+.side-nav > .side-page-links > li {
+    font-size: 120%;
+    margin-bottom: 22%;
+}
+
+.side-nav > .side-page-links .nav-link {
+    padding: 0 20% 3%;
+}
+
+.side-nav .social-links {
+    margin: auto 0 0;
+    display: flex;
+    width: 70%;
 }
 
 .logo {
@@ -52,6 +118,7 @@ h2 {
 
 .social-links {
     flex-basis: 10%;
+    font-size: 120%;
 }
 
 .page-links {
@@ -59,6 +126,16 @@ h2 {
     padding-right: 9%;
     text-transform: capitalize;
 }
+
+.fa-facebook, .fa-linkedin, .fa-square-instagram, .fa-twitter {
+    color: #395B64;
+    transition: color 0.4s;
+}
+
+.fa-facebook:hover { color: #3b5998}
+.fa-square-instagram:hover {color: #e95950}
+.fa-twitter:hover {color: #00acee}
+.fa-linkedin:hover {color: #0072b1}
 
 .nav-link:link,
 .nav-link:visited {

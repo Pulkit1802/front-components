@@ -6,12 +6,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <title>Title</title>
+
+    <style>
+        .hidden {
+            width: 0;
+            overflow: hidden;
+        }
+    </style>
+
 </head>
 <body>
     <header>
         <nav class="top-nav">
-            <div class="logo">Frontend <span>Components</span></div>
+            <div class="logo">Frontend-<span>Components</span></div>
             <ul class="page-links">
                 <li><a href="#" class="nav-link">Home</a> </li>
                 <li><a href="#" class="nav-link">Modal</a></li>
@@ -21,7 +30,26 @@
             <ul class="social-links">
                 <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </nav>
+
+        <div class="btn-side-nav"><i class="fa-solid fa-bars"></i></div>
+        <div class="overlay hidden"></div>
+
+        <nav class="side-nav hidden">
+            <div class="logo">Frontend <span>Components</span></div>
+            <ul class="side-page-links">
+                <li><a href="#" class="nav-link">Home</a> </li>
+                <li><a href="#" class="nav-link">Modal</a></li>
+                <li><a href="#" class="nav-link">Sliders</a></li>
+                <li><a href="#" class="nav-link">Cards</a></li>
+            </ul>
+            <ul class="social-links">
                 <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </nav>

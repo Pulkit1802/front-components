@@ -1,0 +1,14 @@
+@media (max-width: 1300px) {
+    .btn-side-nav {
+        visibility: visible;
+    }
+
+    .top-nav {
+        justify-content: flex-start;
+    }
+
+    .top-nav .page-links, .top-nav .social-links {
+        display: none;
+    }
+
+}
