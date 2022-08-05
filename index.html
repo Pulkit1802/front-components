@@ -13,6 +13,7 @@
         .hidden {
             width: 0;
             overflow: hidden;
+            padding: 0;
         }
     </style>
 
@@ -20,12 +21,12 @@
 <body>
     <header>
         <nav class="top-nav">
-            <div class="logo">Frontend-<span>Components</span></div>
+            <div class="logo">Modal-<span>Images</span></div>
             <ul class="page-links">
                 <li><a href="#" class="nav-link">Home</a> </li>
-                <li><a href="#" class="nav-link">Modal</a></li>
-                <li><a href="#" class="nav-link">Sliders</a></li>
-                <li><a href="#" class="nav-link">Cards</a></li>
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Home</a></li>
             </ul>
             <ul class="social-links">
                 <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
@@ -42,9 +43,9 @@
             <div class="logo">Frontend <span>Components</span></div>
             <ul class="side-page-links">
                 <li><a href="#" class="nav-link">Home</a> </li>
-                <li><a href="#" class="nav-link">Modal</a></li>
-                <li><a href="#" class="nav-link">Sliders</a></li>
-                <li><a href="#" class="nav-link">Cards</a></li>
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Home</a></li>
             </ul>
             <ul class="social-links">
                 <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
@@ -58,6 +59,8 @@
             <h2>
                Image Grid
             </h2>
+
+            <p class="heading-text">Click on images to know more.</p>
 
             <div class="image-container">
                 <div class="header-img"><img src="images/anthony-da-cruz-cbEh1Lfpknw-unsplash.jpg" alt="just-some-img"></div>
@@ -74,6 +77,14 @@
             </div>
         </div>
     </header>
+
+    <div class="modal hidden">
+        <div class="modal-img"><img src="images/ankita-bhattacharya-7oUfCP0T-ko-unsplash.jpg" alt="clicked-image"></div>
+        <div class="modal-heading"><h2>Snow</h2></div>
+        <div class="modal-content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dui ex, ornare a erat sit amet, sollicitudin tempus massa. Curabitur lobortis orci at interdum feugiat. In tempus sem ante, eget cursus justo lacinia ut. Donec porttitor finibus odio sed commodo. Aenean sagittis felis vel dui lobortis fermentum. Praesent sit amet commodo metus, et egestas enim. Aenean dignissim commodo magna, vel blandit odio. Morbi iaculis lorem vel vehicula laoreet. Vestibulum interdum non lectus ut facilisis. Pellentesque eget commodo nulla. Proin euismod commodo arcu vitae tristique. Fusce convallis est non maximus tempor. </div>
+        <div class="close-modal-btn">Close Modal</div>
+    </div>
+
     <script src="https://kit.fontawesome.com/d7ca7be8cc.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 

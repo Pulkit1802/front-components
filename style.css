@@ -25,23 +25,32 @@ h2 {
     padding: 0 3% 1%;
     color: #0F3D3E;
     border-bottom: 2px #0F3D3E solid;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
+}
+
+.heading-text {
+    margin-bottom: 3%;
+    font-size: 120%;
 }
 
 .btn-side-nav {
-    position: absolute;
+    position: fixed;
     top: 1.5%;
     right: 10%;
     font-size: 140%;
     cursor: pointer;
     visibility: hidden;
-    color: #0F3D3E;
+    color: #fff;
+    background-color: #80828a;
     z-index: 2;
-    transition: transform 0.4s, color 0.4s;
+    padding: 1px 8px;
+    border-radius: 5px;
+    transition: transform 0.4s, color 0.4s, background-color 0.4s;
 }
 
 .btn-side-nav:hover {
-    color: #395B64;
+    color: #0F3D3E;
+    background-color: #D7DDE8;
     transform: rotate(90deg);
 }
 
@@ -183,6 +192,7 @@ h2 {
     width: 100%;
     max-width: 500px;
     object-fit: cover;
+    cursor: pointer;
     transform: scale(1.5);
     transition: transform 0.8s, opacity 0.5s;
 }
@@ -191,3 +201,53 @@ h2 {
     opacity: 1;
     transform: scale(1);
 }
+
+.modal {
+    max-width: 60%;
+    text-align: center;
+    background: linear-gradient(rgba(215, 221, 232), rgba(215, 221, 232));
+    padding: 2%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+}
+
+.modal h2 {
+    border-bottom: none;
+
+}
+
+.modal-img {
+    margin: 0 auto 5%;
+    max-width: 500px;
+    overflow: hidden;
+    background: #0F3D3E;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.modal-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+}
+
+.close-modal-btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 1% 5%;
+    margin: 4% 0 0;
+    border-radius: 15px;
+    border: 1px #0F3D3E solid;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.close-modal-btn:hover {
+    background-color: #0F3D3E;
+    color: #D7DDE8;
+}
+
+
