@@ -1,3 +1,3 @@
-# Front_end components 
+# Image components 
 
-Just trying out various front-end design elts
+Click on Image to Open Modal Tab
